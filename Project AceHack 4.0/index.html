@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blockchain-Based Donation Tracker</h1>
+        </header>
+
+        <section class="donation-section">
+            <h2>Make a Donation</h2>
+            <input type="number" id="donationAmount" placeholder="Amount to donate (in Wei)">
+            <button id="donateButton" onclick="donate()">Donate</button>
+        </section>
+
+        <section class="donation-info">
+            <h3>Total Donations: <span id="totalDonations">0</span> Wei</h3>
+            <h3>Donation History:</h3>
+            <ul id="donationHistory"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ff6ec7, #4a00e0);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.donation-section,
+.donation-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.donation-section:hover,
+.donation-info:hover {
+    transform: translateY(-10px);
+}
+
+.donation-section h2,
+.donation-info h3 {
+    color: #ecf0f1;
+    font-size: 1.5em;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #34495e;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+input[type="number"]:focus {
+    background: #16a085;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.4);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff6ec7, #4a00e0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4a00e0, #ff6ec7);
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(5px);
+}
+
+footer {
+    margin-top: 30px;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    input[type="number"] {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
