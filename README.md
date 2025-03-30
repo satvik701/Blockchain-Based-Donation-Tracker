@@ -72,3 +72,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **MetaMask**: For providing the wallet integration to interact with the Ethereum network.
 - **Remix IDE**: For smart contract development and testing.
 # Blockchain-Based-Donation-Tracker
+
+## INTERFACE
+![image](https://github.com/user-attachments/assets/60c9decc-04cf-4885-83fa-ffd2da59c675)
+
